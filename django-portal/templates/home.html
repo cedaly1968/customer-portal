@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% bootstrap_javascript_tag %}
+
+
+
+
+{% block content %}
+
+
+
+<div class="container">
+<div class="row">
+  	<div class="span12">
+  		<h3>Results</h3>
+  	 	<p>Welcome to dashfacts customer portal! Below are your rolling 12 month business results. To get indepth analysis on your business metrics
+  	 	visit the tabs above. 
+		</p>
+
+	 <div id="here" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<script >
+$(function () {
+        $('#here').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Revenue By Product'
+            },
+
+            xAxis: {
+                categories: [	{% for i,j in dat.iteritems %}
+									'{{i}}',
+									{% endfor %}
+                ]
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Revenue ($000\'s)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                    '<td style="padding:0"><b>{point.y:.1f} ($000\'s)</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 0
+                }
+            },
+            series: [{
+                data: [{% for i,j in dat.iteritems %}
+                					{{j}},
+                					{% endfor %}]
+    
+            }]
+        });
+    });
+    
+    </script>
+   	
+	
+  	</div>
+</div>
+{% endblock %}
+    

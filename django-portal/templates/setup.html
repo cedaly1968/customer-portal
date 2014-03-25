@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load bootstrap_toolkit %}
+
+{% bootstrap_javascript_tag %}
+
+{% load staticfiles %}
+{% load banana_tags %}
+
+
+{% block content %}
+
+<div class="hero-unit">
+	<h1>Setup Your Connections!</h1>
+	<p>Use this page to setup integrations to all the apps that make your business run. Then prepare yourself for the analytical 
+	insight that will soon be at your fingertips!</p>
+</div>
+	
+<div class="row">
+	<h2> BigCommerce Integration </h2>
+		<p> To setup integration with BigCommerce you will need to read the instructions see BG instructions <a href="https://developer.bigcommerce.com/docs/api/v2/authentication#api_access" target="_newtab"> here </a>. Then login <a href="http://www.bigcommerce.com/" target="_newtab">here</a> and be sure to name the user 'dashfacts'. Copy and paste the API Access Token
+		in the API Key field below. Also paste your store url in the field below and then submit! Prepare yourself for insight, analytics and action!
+		</p>
+		<div class="row">
+		
+		<div class="span8">
+		<!--
+			<form action="" method="post">{% csrf_token %} 
+			{{ bgform.as_p }}
+			<input type="submit" value="Submit" />
+			</form>
+		-->
+			<form action="" method="post" class="form-inline" name="BG">
+    		{% csrf_token %}
+    		{% bootstrap_form bgform layout="inline" %}
+    		
+        	<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+			{% for key, value in bgmessage.iteritems %}
+			<div class="span4 text-center text-{{key}}">
+			<b>{{value}}</b>
+			{% endfor %}
+			</div>
+		</div>
+</div>
+<div class="row">
+	<h2> Google Analytics Integration </h2>
+		<p> To setup integration with Google Analytics just select the button below.
+		</p>
+		<div class="row">
+		<div class="span4">
+		<form action="" method="post">{% csrf_token %}<input class="btn btn-primary" type="submit" value="Connect Google Analytics"  name="GA" />
+		</form>
+		</div>
+		{% for key, value in gamsg.iteritems %}
+		<div class="span4 text-center text-{{key}}">
+		<b>{{value}}</b>
+		{% endfor %}
+		</div>
+		
+		</div>
+</div>
+
+<div class="row">
+	<h2> MailChimp Integration </h2>
+		<p> To setup integration with MailChimp just select the button below.
+		</p>
+		<div class="row">
+		<div class="span4">
+		<form action="{% banana_auth_url %}" method="post">{% csrf_token %}<input class="btn btn-primary" type="submit" value="Connect MailChimp" name="MC" />
+		</form>
+		</div>
+		{% for key, value in mcmsg.iteritems %}
+		<div class="span4 text-center text-{{key}}">
+		<b>{{value}}</b>
+		{% endfor %}
+		</div>
+		</div>
+</div>
+
+{% endblock %}
