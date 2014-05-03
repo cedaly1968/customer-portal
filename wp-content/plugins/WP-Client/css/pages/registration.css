@@ -1,0 +1,7 @@
+#form_content input[type=text] {
+    width: 95%;
+}
+
+#form_content input[type=password] {
+    width: 150px;
+}

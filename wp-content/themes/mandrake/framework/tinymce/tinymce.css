@@ -1,0 +1,29 @@
+.shortcode-wrapper {
+	font-size:12px;
+	padding:10px;
+}
+.shortcode-wrapper .description {
+	padding-bottom:7px;
+}
+.shortcode-wrapper .options {
+	padding-bottom:19px;
+}
+.shortcode-wrapper label {
+	font-weight:bold;
+}
+.shortcode-wrapper select,
+.shortcode-wrapper input[type="text"] {
+	font-size:12px;
+	line-height:20px;
+	width:100%;
+	padding:5px;
+}
+.shortcode-wrapper .buttons {
+	padding-top:10px;
+}
+.shortcode-wrapper .left {
+	float:left;
+}
+.shortcode-wrapper .right {
+	float:right;
+}

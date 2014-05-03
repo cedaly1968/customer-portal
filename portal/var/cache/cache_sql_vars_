@@ -1,0 +1,1 @@
+                      3806780460a:7:{s:20:"character_set_client";s:4:"utf8";s:16:"join_buffer_size";s:7:"1048576";s:22:"lower_case_table_names";s:1:"0";s:18:"max_allowed_packet";s:8:"16777216";s:13:"max_join_size";s:20:"18446744073709551615";s:15:"sql_big_selects";s:2:"ON";s:12:"wait_timeout";s:2:"60";}

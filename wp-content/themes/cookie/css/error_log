@@ -1,0 +1,1 @@
+[19-Aug-2013 20:35:43 UTC] PHP Fatal error:  Call to undefined function of_get_option() in /home/ced1968/public_html/wp-content/themes/cookie/css/custom_options.css.php on line 14

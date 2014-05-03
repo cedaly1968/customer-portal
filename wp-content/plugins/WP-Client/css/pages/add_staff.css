@@ -1,0 +1,7 @@
+#edit_employee input[type=text] {
+    width: 400px;
+}
+
+#edit_employee input[type=password] {
+    width: 400px;
+}

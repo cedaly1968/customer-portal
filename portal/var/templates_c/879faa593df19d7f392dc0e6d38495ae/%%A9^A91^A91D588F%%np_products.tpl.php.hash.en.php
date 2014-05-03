@@ -1,0 +1,1 @@
+ebca3efc427c6505464a2f1514c20a7ca:2:{s:16:"lbl_next_product";s:12:"Next product";s:20:"lbl_previous_product";s:16:"Previous product";}

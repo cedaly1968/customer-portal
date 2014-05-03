@@ -1,0 +1,137 @@
+/*------------------------------------------
+Default template for BP-Portfolio plugin
+-------------------------------------------*/
+
+.item-project {
+    min-height: 180px;
+}
+
+.item-project {
+    padding: 30px 10px 10px;
+}
+
+.item-project .item-project-pictures {
+    float: left;
+}
+
+.item-project .item-project-pictures img {
+    border: 3px solid #FFFFFF;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 4px #979797;
+}
+
+.item-project .item-project-content {
+    margin-left: 252px;
+    padding: 0 0 0 28px;
+    position: relative;
+}
+
+.item-project .item-project-content h3 {
+    margin: 0 0 5px;
+}
+
+.item-project .item-project-content h3 a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.item-project .item-project-content span {
+    line-height: 24px;
+}
+
+.item-project .item-project-content h3 .item-project-content-meta {
+    display: none;
+    float: right;
+    font-size: 13px;
+}
+
+.item-project .item-project-content h3 .item-project-content-avatar {
+    float: right;
+    font-size: 11px;
+}
+
+.item-project .item-project-content h3 .item-project-content-meta .edit a {
+    color: #21759B;
+    margin-right: 5px;
+}
+
+.item-project .item-project-content h3 .item-project-content-meta .delete a {
+    color: #BC0B0B;
+    margin-left: 3px;
+}
+
+.item-project:hover > .item-project-content h3 .item-project-content-meta {
+    display: block;
+}
+
+.item-project .item-project-content p {
+    margin-top: 3px;
+}
+
+.item-project-separator {
+    background: url("../img/separator.jpg") no-repeat scroll center top transparent;
+    display: block;
+    height: 1px;
+    margin: 15px auto 10px;
+    width: 478px;
+}
+
+/* For activity screen */
+.activity .item-project {
+    padding: 3px;
+}
+
+.activity .item-project .item-project-content .item-project-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.activity .item-project .item-project-content .item-project-url {
+    margin-bottom: 4px;
+}
+
+/* For add/edit screen */
+textarea#description {
+    height: 150px;
+}
+
+p.item-characters-left {
+    font-style: italic;
+    margin-top: 2px;
+}
+
+p.item-characters-left span {
+    font-weight: bold;
+}
+
+span.error {
+    display: none;
+    color: #BC0B0B;
+    font-style: italic;
+    margin-left: 10px;
+}
+
+/* Last projects widget */
+.widget-item-project {
+    padding: 0 0 10px 0;
+    min-height: 42px;
+}
+
+.widget-item-project .widget-item-project-pictures {
+    float: left;
+}
+
+.widget-item-project .widget-item-project-pictures img {
+    border: 2px solid #EEEEEE;
+}
+
+.widget-item-project .widget-item-project-content {
+    margin-left: 44px;
+}
+
+.widget-all-projects {
+    float: right;
+    font-style: italic;
+    margin-bottom: 10px;
+}

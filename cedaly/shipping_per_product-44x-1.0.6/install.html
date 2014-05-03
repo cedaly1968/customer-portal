@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BCSE Shipping Per Product Mod Instructions</title>
+<base href="http://www.bcsengineering.com" />
+</head>
+<body>
+&nbsp;
+<div class="header"></div>
+
+<table id="main_table" cellpadding="0" cellspacing="0" border="0">
+ <tr>
+  <td class="top_left"></td>
+  <td class="top_center"></td>
+  <td class="top_right"></td>
+ </tr>
+  <td class="NavLeft"></td>
+  <td class="content_wrapper">
+
+<pre class="copyright">
++----------------------------------------------------------------------+
+| BCSE Shipping Per Product Mod - v4.4.x                               |
++----------------------------------------------------------------------+
+| Copyright (c) 2004-2010 BCSE LLC. dba BCS Engineering                |
++----------------------------------------------------------------------+
+|                                                                      |
+| BCSE Reward Points Mod is subject for version 2.0 of the BCSE        |
+| proprietary license. That license file can be found bundled with     |
+| this package in the file BCSE_LICENSE. A copy of this license can    |
+| also be found at                                                     |
+| http://www.bcsengineering.com/license/BCSE_LICENSE_2.0.txt           |
+|                                                                      |
++----------------------------------------------------------------------+
+</pre>
+<br />
+<span style="color: red;font-weight:bold;">Note:</span> If you have a custom skin then you will need to apply template changes to the proper skin directory chosen in X-cart Admin. Replace /common_files/ with /&lt;your_skin_directory_name&gt;/ to edit the proper files. If that file doesn't exist in your skin directory then edit the common_files directory file. <br />
+<div class="title">Installation Instructions</div>
+
+<div class="main_content">
+
+<pre class="notes_top">
+NOTE:  You should always make a back-up copy of your files and/or database before installing any modification.
+</pre>
+
+
+<div class="install_step">
+1. Upload the files into their appropriate directories.
+</div>
+
+
+<div class="install_step">
+2. Apply patch.sql in the Patch/Upgrade page.
+</div>
+
+
+<div class="install_step">
+3a. In include/func/func.shipping.php, in function func_get_shipping_methods_list() add:
+
+<div class="code_snippet">
+<pre class="new_code">
+    # BCSE Begin - Shipping Per Product mod
+    $products_sql = '';
+    $num_products = 0;
+    if ($products) {
+        $productids = array();
+        $bcse_first = true;
+        foreach ($products as $key=>$cur_product) {
+            if ($bcse_first){
+                $products_sql .= "productid=$cur_product[productid] ";
+                $bcse_first = false;
+            } else {
+                $products_sql .= "or productid=$cur_product[productid] ";
+            }
+            if (!in_array($cur_product['productid'],$productids)) {
+                $num_products+=1;
+            }
+            $productids[] = $cur_product['productid'];
+        }
+    }
+    # BCSE End</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+    if (
+        !$enable_shipping
+        || $config['Shipping']['realtime_shipping'] != 'Y'</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+3b. In include/func/func.shipping.php, in function func_get_shipping_methods_list(), add:
+
+<div class="code_snippet">
+<pre class="new_code">
+        # BCSE Modified - Begin - Shipping Per Product mod
+        if (func_query_first_cell(&quot;select value from product_shipping_config where name='product_shipping'&quot;)!='N')
+            $shipping = func_query(&quot;SELECT count($sql_tbl[shipping].shippingid) as total, $sql_tbl[shipping].*,productid FROM $sql_tbl[shipping] left join product_shipping using (shippingid) WHERE ( $products_sql ) and active='Y' $destination_condition $weight_condition group BY shippingid having total=$num_products order by orderby&quot;);
+        else
+        # BCSE Modified - End</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+        $shipping = func_query("SELECT * FROM $sql_tbl[shipping] WHERE active='Y' $destination_condition $weight_condition ORDER BY orderby");</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+3c. In include/func/func.shipping.php, in function func_get_shipping_methods_list(), add:
+
+<div class="code_snippet">
+<pre class="new_code">
+        # BCSE Modified - Begin - Shipping Per Product mod
+        if (func_query_first_cell(&quot;select value from product_shipping_config where name='product_shipping'&quot;)!='N')
+            $shipping = func_query(&quot;SELECT count($sql_tbl[shipping].shippingid) as total, $sql_tbl[shipping].*,productid FROM $sql_tbl[shipping] left join product_shipping using (shippingid) WHERE ( $products_sql ) and code='' and active='Y' $destination_condition $weight_condition group BY shippingid having total=$num_products order by orderby&quot;);
+        else
+        # BCSE Modified - End</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="new_code">
+        $shipping = func_query (&quot;SELECT * FROM $sql_tbl[shipping] WHERE code='' AND active='Y' $destination_condition $weight_condition ORDER BY orderby&quot;);</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+3d. In include/func/func.shipping.php, in function func_get_shipping_methods_list(), add:
+
+<div class="code_snippet">
+<pre class="new_code">
+                # BCSE Modified - Begin - Shipping Per Product mod
+                if (func_query_first_cell(&quot;select value from product_shipping_config where name='product_shipping'&quot;)!='N')
+                    $result = func_query_first(&quot;SELECT count($sql_tbl[shipping].shippingid) as total, $sql_tbl[shipping].*,productid, '$intershipper_rate[rate]' AS rate, '$intershipper_rate[warning]' AS warning, $ship_time_column FROM $sql_tbl[shipping] left join product_shipping using (shippingid) WHERE ( $products_sql ) and subcode='$intershipper_rate[methodid]' AND active='Y' $weight_condition group BY shippingid having total=$num_products order by orderby&quot;);
+                else
+                # BCSE Modified - End</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+                $result = func_query_first(&quot;SELECT *, '$intershipper_rate[rate]' AS rate, '$intershipper_rate[warning]' AS warning, $ship_time_column FROM $sql_tbl[shipping] WHERE subcode='$intershipper_rate[methodid]' AND active='Y' $weight_condition ORDER BY orderby&quot;)</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+4a. In include/product_modify.php, add:
+
+<div class="code_snippet">
+<pre class="new_code">
+            # BCSE Begin
+            if ($products_shipping) foreach($products_shipping as $key=&gt;$value)
+                db_query(&quot;insert into product_shipping (shippingid, productid) values ($value,$productid)&quot;);
+            # BCSE End</pre>
+</div>
+
+After:
+<div class="code_snippet">
+<pre class="existing_code">
+            $productid = db_insert_id();</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+4b. In include/product_modify.php, add:
+
+<div class="code_snippet">
+<pre class="new_code">
+            # BCSE Begin
+            db_query(&quot;delete from product_shipping where productid='$productid'&quot;);
+            if ($products_shipping) foreach($products_shipping as $key=&gt;$value)
+                db_query(&quot;insert into product_shipping (shippingid, productid) values ($value,$productid)&quot;);
+            if ($fields[&quot;products_shipping&quot;] &amp;&amp; $geid) {
+                while ($pid = func_ge_each($geid, 1, $productid)) {
+                    db_query(&quot;delete from product_shipping where productid='$pid'&quot;);
+                    if ($products_shipping) foreach($products_shipping as $key=&gt;$value)
+                        db_query(&quot;insert into product_shipping (shippingid, productid) values ($value,$pid)&quot;);
+                }
+            }
+            # BCSE End</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+            $status = 'modified';</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+4c. In include/product_modify.php, add:
+
+<div class="code_snippet">
+<pre class="new_code">
+# BCSE Begin
+$condition = '';
+
+if ($active_modules[&quot;UPS_OnLine_Tools&quot;] and $config[&quot;Shipping&quot;][&quot;use_intershipper&quot;] != &quot;Y&quot;) {
+    include $xcart_dir.&quot;/modules/UPS_OnLine_Tools/ups_shipping_methods.php&quot;;
+}
+$shipping_methods = func_query(&quot;select s.shippingid, s.shipping from $sql_tbl[shipping] s WHERE s.active = 'Y' $condition ORDER BY s.shipping asc&quot;);
+$current_shipping_methods = func_query(&quot;select $sql_tbl[shipping].shippingid, shipping, product_shipping.shippingid as prod_shippingid, productid from $sql_tbl[shipping] left join product_shipping using (shippingid) where productid='$productid'&quot;);
+$smarty-&gt;assign(&quot;shipping_methods&quot;,$shipping_methods);
+$smarty-&gt;assign(&quot;current_shipping_methods&quot;,$current_shipping_methods);
+# BCSE End</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+if (!empty($product_modified_data['taxes']) &amp;&amp; !empty($taxes)) {</pre>
+</div>
+</div>
+
+<div class="install_step">
+4d. In include/product_modify.php, add:
+
+<div class="code_snippet">
+<pre class="new_code">
+                    !in_array('products_shipping') &amp;&amp;</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+                    (!$is_variant || !in_array($k, array('avail', 'weight')))</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+5. In skin/common_files/main/product_details.tpl add:
+
+<div class="code_snippet">
+<pre class="new_code">
+{* BCSE begin *}
+&lt;tr&gt;
+  {if $geid ne ''}&lt;td width=&quot;15&quot; class=&quot;TableSubHead&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;Y&quot; name=&quot;fields[products_shipping]&quot; /&gt;&lt;/td&gt;{/if}
+  &lt;td class=&quot;FormButton&quot; nowrap=&quot;nowrap&quot;&gt;{$lng.lbl_shipping_methods}&lt;/td&gt;
+  &lt;td class=&quot;ProductDetails&quot;&gt;
+    &lt;select name=&quot;products_shipping[]&quot; multiple=&quot;multiple&quot;&gt;
+      {section name=shipping_index loop=$shipping_methods}
+      &lt;option value=&quot;{$shipping_methods[shipping_index].shippingid}&quot;{foreach item=sm from=$current_shipping_methods}{if $sm.shippingid eq $shipping_methods[shipping_index].shippingid} selected{/if}{/foreach}&gt;{$shipping_methods[shipping_index].shipping|trademark}&lt;/option&gt;
+      {/section}
+    &lt;/select&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+{* BCSE end *}</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+&lt;tr&gt;
+  {if $geid ne ''}&lt;td width=&quot;15&quot; class=&quot;TableSubHead&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;Y&quot; name=&quot;fields[shipping_freight]&quot; /&gt;&lt;/td&gt;{/if}</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+6. In include/product_clone.php add:
+
+<div class="code_snippet">
+<pre class="new_code">
+        # BCSE Begin
+        $products_shipping = func_query(&quot;select * from product_shipping where productid='$productid'&quot;);
+        if ($products_shipping) foreach ($products_shipping as $key=&gt;$value)
+            db_query(&quot;insert into product_shipping (shippingid, productid) values ('&quot;.$value['shippingid'].&quot;','$new_productid')&quot;);
+        # BCSE End</pre>
+</div>
+
+After:
+<div class="code_snippet">
+<pre class="existing_code">
+    if ($new_productid) {</pre>
+</div>
+</div>
+
+
+<div class="install_step">
+7. In skin/common_files/common_templates.tpl add:
+
+<div class="code_snippet">
+<pre class="new_code">
+{* BCSE Begin - Shipping Per Product *}
+{elseif $main eq &quot;shipping_per_product&quot;}
+{include file=&quot;main/shipping_per_product.tpl&quot;}
+{* BCSE End *}</pre>
+</div>
+
+Before:
+<div class="code_snippet">
+<pre class="existing_code">
+{else}
+
+  {if $usertype eq 'C'}</pre>
+</div>
+</div>
+
+
+<div class="install_note">
+Do this step only if the line <code class="new_code">&lt;li&gt;Custom Modules</code> doesn't exist
+</div>
+<div class="install_step">
+8a. In skin/common_files/single/menu_box.tpl and skin/common_files/admin/menu_box.tpl, add:
+
+<div class="code_snippet">
+<pre class="new_code">
+
+&lt;li&gt;Custom Modules
+&lt;div&gt;
+
+&lt;/div&gt;
+&lt;/li&gt;</pre>
+</div>
+
+After:
+<div class="code_snippet">
+<pre class="existing_code">
+{include file="admin/help.tpl"}</pre>
+</div>
+</div>
+
+<div class="install_step">
+8b. In skin/common_files/single/menu_box.tpl and skin/common_files/admin/menu_box.tpl, add:
+
+<div class="code_snippet">
+<pre class="new_code">
+&lt;a href=&quot;{$catalogs.admin}/shipping_per_product.php&quot;&gt;Shipping Per Product&lt;/a&gt;</pre>
+</div>
+
+After:
+<div class="code_snippet">
+<pre class="existing_code">
+&lt;li&gt;Custom Modules
+&lt;div&gt;</pre>
+</div>
+</div>
+
+
+
+<div class="end_text">Installation Complete!</div>
+
+</div>
+
+  </td>
+  <td class="NavRight"></td>
+ </tr>
+ <tr>
+  <td class="bottom_left"></td>
+  <td class="bottom_center"></td>
+  <td class="bottom_right"></td>
+ </tr>
+</table>
+
+<style type="text/css">
+<!--
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana,Arial,Helvetica,Sans-serif;
+	font-size: 12px;
+	border: 0 none;
+}
+
+html, body {
+	height: 100%;
+}
+
+html {
+	background-color: #5789BA;
+	background-image: url(/store/skin1/images/bluefade_bgl.gif);
+	background-position: center top;
+	background-repeat: repeat-x;
+}
+
+body {
+	background: url(/store/skin1/images/bcs_header.gif) no-repeat 15px 20px;
+	width: 100%;
+	cursor: default;
+}
+
+pre {
+	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.NavLeft {
+	background-image: url(/store/skin1/images/nav_left_middle.gif);
+	background-repeat: repeat-y;
+	background-position: center middle;
+}
+
+.NavRight {
+	background-image: url(/store/skin1/images/nav_right_middle.gif);
+	background-repeat: repeat-y;
+	background-position: center middle;
+}
+
+#main_table{
+	width: 850px;
+	margin: 85px auto 2px;
+}
+
+td.content_wrapper{
+	background-color: white;
+}
+
+td.top_left{
+	background: url(/store/skin1/images/nav_left_top.gif);
+	height: 13px;
+	width: 16px;
+}
+
+td.top_center{
+	background: white;
+}
+
+td.top_right{
+	background: url(/store/skin1/images/nav_right_top.gif);
+	height: 13px;
+	width: 16px;
+}
+
+td.bottom_left{
+	background: url(/store/skin1/images/nav_left_bottom.gif);
+	height: 17px;
+	width: 16px;
+}
+
+td.bottom_center{
+	height: 17px;
+	background-color: white;
+	background-image: url(/store/skin1/images/nav_bg.gif);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+td.bottom_right{
+	background: url(/store/skin1/images/nav_right_bottom.gif);
+	height: 17px;
+	width: 16px;
+}
+
+div.main_content {
+	padding: 10px 25px;
+	float: left;
+}
+
+div.center_div {
+	width: 100%;
+	text-align: center;
+}
+
+div.install_step{
+	margin: 0px 0px 30px 0px;
+}
+
+div.install_note{
+	font-weight: bold;
+	background-color: #f2f2f2;
+	padding: 5px 0;
+	margin: 2px 0;
+}
+
+div.title {
+	font-size: 16px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	margin: 10px 0px;
+	text-decoration: underline;
+}
+
+div.end_text {
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+	text-align: left;
+	margin: 10px 0px 5px;
+}
+
+pre.copyright{
+	margin: 0px 0px 10px 0px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+.code_snippet{
+	margin: 10px 0px;
+	overflow: hidden;
+}
+
+.existing_code{
+	color: blue;
+}
+
+.new_code{
+	color: green;
+}
+
+.small{
+	font-size: 10px;
+}
+
+.optional {
+	font-weight: bold;
+	font-family: monospace;
+	cursor: pointer;
+	margin: 0 0 10px 0;
+	border: 1px solid #f0f0f0;
+}
+
+pre.notes_top{
+	margin: 0px 0px 15px 0px;
+	font-family: monospace;
+	color: black;
+	background: #f2f2f2;
+	padding: 5px;
+}
+-->
+</style>
+
+</body>
+</html>

@@ -1,0 +1,434 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Qualeb 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-14 08:25-0600\n"
+"PO-Revision-Date: 2011-11-14 08:27-0600\n"
+"Last-Translator: Tom <atiminou3@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Othmane\\Desktop\\Qualeb - Responsive Portfolio & Agency Wordpress Theme\\Qualeb\\Final\\qualeb\n"
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/404.php:13
+msgid "Error 404"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/404.php:15
+msgid "NOT FOUND"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/404.php:24
+msgid "The Page you are looking for cannot be found"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive-blog-ac.php:47
+#: Theme\Qualeb\Final\qualeb/archive-blog.php:45
+msgid "<span class=\"arrow\">&larr;</span> Older posts"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive-blog-ac.php:48
+#: Theme\Qualeb\Final\qualeb/archive-blog.php:46
+msgid "Newer posts <span class=\"arrow\">&rarr;</span>"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:12
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:14
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:16
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:18
+msgid "Blog Archives"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:43
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:44
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/archive.php:54
+#: Theme\Qualeb\Final\qualeb/author.php:46
+#: Theme\Qualeb\Final\qualeb/category.php:45
+msgid "Apologies, but no results were found for the requested archive."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/author.php:13
+msgid "Author Archives: "
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/author.php:19
+#: Theme\Qualeb\Final\qualeb/category.php:18
+msgid "Nothing Found"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/category.php:12
+msgid "Category Archives: "
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:16
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:44
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:45
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:55
+#: Theme\Qualeb\Final\qualeb/comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:80
+msgid "Name"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:82
+msgid "Email"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/comments.php:84
+msgid "Website"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/content-blog.php:59
+#: Theme\Qualeb\Final\qualeb/content-blogreg.php:57
+#: Theme\Qualeb\Final\qualeb/functions.php:274
+msgid "Continue reading <span class=\"readmore-arrow\">&rarr;</span>"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:132
+msgid "Primary Menu"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:249
+#: Theme\Qualeb\Final\qualeb/functions.php:252
+#: Theme\Qualeb\Final\qualeb/functions.php:255
+msgid "Comment on "
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:250
+msgid " Comments"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:253
+msgid " Comment"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:256
+msgid "Leave a comment"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:259
+msgid "Comments closed"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:300
+msgid "Pingback:"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:301
+#: Theme\Qualeb\Final\qualeb/functions.php:328
+msgid "Edit"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:332
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/functions.php:338
+msgid "Reply <span class=\"readmore-arrow\">&rarr;</span>"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/header.php:31
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/header.php:96
+msgid "Home"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/search.php:15
+msgid "Search results for: "
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/search.php:50
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/tag.php:13
+msgid "Tag Archives: "
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/tag.php:45
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-framework.php:228
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-framework.php:260
+msgid "Default options restored."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-framework.php:301
+msgid "Options saved."
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-framework.php:359
+msgid "Theme Options"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-medialibrary-uploader.php:128
+msgid "Upload"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/admin/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:20
+msgid "Portfolio"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:21
+msgid "Portfolio Item"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:22
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:22
+msgid "Add New"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:23
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:23
+msgid "Add New Item"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:25
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:25
+msgid "Edit Item"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:26
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:26
+msgid "New Item"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:27
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:27
+msgid "View "
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:28
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:28
+msgid "View Item"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:29
+msgid "Search Portfolio"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:30
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:30
+msgid "No Items found"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-portfolio.php:31
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:31
+msgid "No Items found in Trash"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:20
+msgid "Slider Items"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:21
+msgid "Slider Item"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/post-type-slider.php:29
+msgid "Search Slider Items"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/widgets.php:30
+msgid "Blog"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/widgets.php:39
+msgid "Pages"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/widgets.php:48
+msgid "Footer"
+msgstr ""
+
+#: C:\Users\Othmane\Desktop\Qualeb
+#: - Responsive Portfolio & Agency Wordpress
+#: Theme\Qualeb\Final\qualeb/library/extensions/widgets.php:50
+msgid "First footer column from the left"
+msgstr ""
+

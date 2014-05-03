@@ -1,0 +1,21 @@
+.chkRequired{color: #FF0026}
+.frm_testi{margin-top: 8px;}
+input[type="text"].error, textarea.error {border-color:#FF0026 !important;}
+label.error {margin-left: 5px; color:#FF0026;border-color:#FF0000 !important; display: none !important;}
+.label_class{width: 250px;}
+.cancel_link{margin-left: 8px;}
+.column-Rank{width:75px !important;}
+.cls_testi{padding-top: 15px;}
+.input_testi{margin-left: 10px;}
+label.lbl_order{margin-right: 35px;}
+.radio_order{margin-left: 50px;}
+label.lbl_effects{margin-right: 35px;}
+.input_effects{margin-left: 46px;}
+label.lbl_time{margin-right: 35px;}
+.input_time{margin-left: 38px;}
+.btn_add{margin-left: 80px !important;}
+label.lbl_submit{margin-right: 45px;}
+
+.hide{display: none !important;}
+
+.radio_order_by{margin-left: 33px;}

@@ -1,0 +1,1 @@
+10aae6368d0abb6d505cdf56e221c479a:3:{s:19:"lbl_forgot_password";s:16:"Forgot password?";s:19:"txt_email_not_match";s:47:"{{login_field}} does not match. Please correct.";s:20:"txt_password_recover";s:150:"Enter the e-mail address associated with your account, then click Submit. We'll email you a link to a page where you can easily create a new password.";}

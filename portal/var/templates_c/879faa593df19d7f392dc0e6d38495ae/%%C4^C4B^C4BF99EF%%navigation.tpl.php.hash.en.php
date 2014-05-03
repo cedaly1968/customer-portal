@@ -1,0 +1,1 @@
+f16acb218c34bf8e9f125a80fba0818da:5:{s:16:"lbl_current_page";s:12:"Current page";s:13:"lbl_next_page";s:9:"Next page";s:8:"lbl_page";s:4:"Page";s:13:"lbl_prev_page";s:13:"Previous page";s:16:"lbl_result_pages";s:12:"Result pages";}

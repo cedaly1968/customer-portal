@@ -1,0 +1,1 @@
+fc91e8f254b382bea2932fbbcd3a35cfa:5:{s:18:"lbl_authentication";s:14:"Authentication";s:19:"lbl_forgot_password";s:16:"Forgot password?";s:10:"lbl_logoff";s:8:"Sign out";s:14:"lbl_my_account";s:10:"My account";s:12:"lbl_register";s:8:"Register";}

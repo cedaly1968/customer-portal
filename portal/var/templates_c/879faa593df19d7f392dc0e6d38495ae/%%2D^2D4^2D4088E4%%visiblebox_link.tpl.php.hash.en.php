@@ -1,0 +1,1 @@
+39dfff68cf3d5caa1bda6df9f88b4716a:2:{s:18:"lbl_click_to_close";s:14:"Click to close";s:17:"lbl_click_to_open";s:13:"Click to open";}

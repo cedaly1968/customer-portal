@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {type: 'bar'},credits: {enabled: 'false'},legend: {align: 'right',backgroundColor: '#FFFFFF',borderWidth: '1',floating: 'true',layout: 'vertical',shadow: 'true',verticalAlign: 'top',x: '-40',y: '100'},subtitle: {text: 'Source: Wikipedia.org'},title: {text: 'Historic World Population by Region'},tooltip: {valueSuffix: 'millions'}, plotOptions: { bar: {dataLabels: {enabled: 'false'},},},xAxis: { categories: ['2215961','3913904','85219540','59764194','92166618','36379922','108202341','7540587','49990469','48674744','4790615','49819641','31465931'],title: {text: 'null'}, },yAxis:{ labels: {overflow: 'justify'},min: '0',title: {align: 'high',text: 'Population (millions)'}, },series: [{ data: [2215961,3913904,85219540,59764194,92166618,36379922,108202341,7540587,49990469,48674744,4790615,49819641,31465931],name: 'gross_sales',},{ data: [2016022,3542749,76522670,53321238,81994909,32504210,97583047,6927053,45437836,43416694,4282078,44543175,28689389],name: 'gross_sales',},{ data: [53085,106658,2101806,1806852,2755504,914334,2650518,160974,1224132,1261859,123631,1215075,785887],name: 'gross_sales',},{ data: [41460,81266,1657104,1421952,2169951,712692,2063330,125101,960954,996554,95376,956437,612766],name: 'gross_sales',},]
+        });
+    });
+    
+
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

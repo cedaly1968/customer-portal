@@ -1,0 +1,80 @@
+  #easymetaimg {
+        -moz-border-radius: 6px;
+        background: #eef2f7;
+        -webkit-border-radius: 6px;
+        border: 2px solid #536376;
+        -webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+        -moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;;
+        padding: 14px 22px;
+        width: 395px;
+        position: relative;
+        display: none;
+    }
+    #easymetaimg #easymetaimg_form {
+        margin-top: 13px;
+    }
+    #easymetaimg label {
+        display: block;
+        margin-bottom: 10px; 
+        color: #536376;
+        font-size: .9em;
+    }
+  
+    #easymetaimg label input {
+        display: block;
+        width: 373px;
+        height: 25px;
+        background-position: -201px 0;
+        padding: 2px 8px;
+        font-size: 1.2em;
+        line-height: 31px;
+    }
+	
+	
+    #easymetaimg label textarea {
+        display: block;
+        width: 393px;
+        height: 150px;
+        background-position: -201px 0;
+        padding: 2px 8px;
+        font-size: 1.2em;
+    }
+		
+    
+    #see_id {
+        width: 228px;
+        height: 23px;
+        background-position: -202px -133px;
+    }
+    #left_out {
+        background-position: -202px -158px;
+        width: 113px; height: 16px;
+    }
+    #easymetaimg_form {
+        position: relative;
+		height:350px;
+    }
+    #actions {
+        float: left;
+        position: absolute;
+        right: 0;
+        height: auto;
+        bottom: 20px;
+    }
+    a.form_button {
+        float: left;
+        width: 93px; height: 31px;
+        margin-right: 15px;
+    }
+    #easycancel { background-position: -198px -36px; }
+    #easycancel:hover { background-position: -198px -67px; }
+    #easycancel:active { background-position: -198px -98px; }
+    #close_x { 
+        width: 24px; height: 23px;
+        overflow: hidden; line-height: 1000px;
+        display: block;
+        position: absolute; top: 5px; right: 5px;
+        background: transparent url(../images/delmedia.png) no-repeat;
+width:23px;
+height:23px;
+    }

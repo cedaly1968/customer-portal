@@ -1,0 +1,1 @@
+74a515b6dbe8d9f68daff68b0d86b9aba:6:{s:11:"lbl_goodies";s:7:"Goodies";s:28:"lbl_goodies_design_templates";s:16:"Design templates";s:22:"lbl_goodies_extensions";s:10:"Extensions";s:34:"lbl_goodies_extra_popular_features";s:22:"Extra popular features";s:26:"lbl_goodies_other_services";s:14:"Other services";s:14:"lbl_xcart_news";s:11:"X-Cart news";}

@@ -1,0 +1,1 @@
+bb47d247984e369e9b875c19caa26ef5a:1:{s:11:"lbl_buy_now";s:7:"Buy Now";}

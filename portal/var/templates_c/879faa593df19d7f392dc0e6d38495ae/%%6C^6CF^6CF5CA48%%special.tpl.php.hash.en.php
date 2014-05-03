@@ -1,0 +1,1 @@
+cbc60fcdbfd51926a35d1dd33c3795bda:4:{s:21:"lbl_friends_wish_list";s:18:"Friend's Wish list";s:17:"lbl_gift_registry";s:13:"Gift registry";s:17:"lbl_manufacturers";s:13:"Manufacturers";s:11:"lbl_special";s:7:"Special";}

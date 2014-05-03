@@ -1,0 +1,1 @@
+1a4eda1930d3607326392336e40663f4a:2:{s:38:"lbl_partner_area_is_temporary_disabled";s:35:"Partner area is temporary disabled!";s:43:"txt_partner_area_is_temporary_disabled_note";s:80:"If you have any questions you can ask the shop administrator by email {{email}}.";}

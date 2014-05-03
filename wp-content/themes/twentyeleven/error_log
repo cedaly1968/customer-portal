@@ -1,0 +1,2 @@
+[31-Oct-2013 18:20:11 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/ced1968/public_html/wp-content/themes/twentyeleven/index.php on line 15
+[26-Dec-2013 09:11:04 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/ced1968/public_html/wp-content/themes/twentyeleven/404.php on line 10

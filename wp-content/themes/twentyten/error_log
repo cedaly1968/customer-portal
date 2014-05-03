@@ -1,0 +1,1 @@
+[29-Dec-2013 00:06:47 America/Detroit] PHP Fatal error:  Call to undefined function get_header() in /home/ced1968/public_html/wp-content/themes/twentyten/search.php on line 10

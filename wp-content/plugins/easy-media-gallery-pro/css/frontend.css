@@ -1,0 +1,359 @@
+/*
+ * Easy Media Gallery Pro
+ * Frontend Style v1.3.1.3
+ * Copyright (c) 2012 GhozyLab, Inc. - http://ghozylab.com/
+*/
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+#mbMedia, #mbContainer, #mbCenter, #mbBottom {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}	
+
+.thecol {display:inline-block; vertical-align:top !important;}
+
+.view {
+   overflow: hidden;
+   position: relative;
+}
+
+.view img {
+	padding:0px !important;
+	display: block;
+	position: relative;
+	max-width: 100%;
+	overflow: hidden !important;
+	margin:auto;
+}
+
+.emgisotop img {
+	padding:0px !important;
+	display: block;
+	position: relative;
+	max-width: 100%;
+	overflow: hidden !important;
+	margin:auto;
+}
+
+.da-thumbs article.da-animate p{
+	position:absolute;
+	width:100%;
+	text-align: center !important;
+	background: rgba(0, 0, 0, 0.5) !important;
+	padding:5px 0 5px 0 !important;
+	color: #FFF !important;
+	font-weight:bold !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font: 16px/1 !important;
+	text-shadow:none !important;
+	overflow: hidden !important;
+}
+
+
+/* Portolio/Thumbnail Hover */
+
+.da-thumbs {
+	overflow: hidden;
+}
+
+.da-thumbs article.da-animate {
+	position:absolute;
+	width:100%;
+	height:100%;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	overflow: hidden !important;	
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;	
+}
+
+/* Initial state classes: */
+.da-slideFromTop {
+	left: 0px;
+	top: -100%;
+}
+
+.da-slideFromBottom {
+	left: 0px;
+	top: 100%;
+}
+
+.da-slideFromLeft {
+	top: 0px; 
+	left: -100%;
+}
+
+.da-slideFromRight {
+	top: 0px;
+	left: 100%;
+}
+
+/* Final state classes: */
+.da-slideTop {
+	top: 0px;
+}
+
+.da-slideLeft {
+	left: 0px;
+}
+
+span.link_post{
+display:inline-block;
+width:35px;
+height:35px;
+border-radius:50px;
+cursor:pointer;
+background-image:url(images/link_post_icon.png); background-repeat:no-repeat; background-position:center;
+margin-right:10px;
+}
+
+span.zoom{
+opacity: 0.6;
+display:inline-block;	
+overflow:hidden;
+width:35px;
+height:35px;
+border-radius:50px;
+cursor:pointer;
+background-image:url(images/mag.png); background-repeat:no-repeat; background-position:center;
+padding:3px;
+}
+
+/* Image Grid */
+.forspan {
+    position:relative;
+    top: 40%;
+	margin:0 auto;
+	text-align:center;
+	z-index:1;
+	overflow: hidden;
+	float:none;
+	}
+	
+span.zoom:hover{
+	opacity: 0.8;
+	}
+	
+span.link_post:hover{
+	opacity: 0.8;
+	}
+	
+	
+.easymedia_center {
+	clear: both; display: block; text-align:center; margin-left: auto; margin-right: auto;
+}
+
+.easymedia_left {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.easymedia_right {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}	
+	
+.easymedia_none {
+	float:none;
+}	
+		
+.preloaderview { background:url(images/89.gif) center center no-repeat #ffffff !important;  }	
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.emgclearfix:before, .emgclearfix:after { content: ""; display: table; }
+.emgclearfix:after { clear: both; }
+.emgclearfix { zoom: 1; }
+			
+#emgoptions .portfolio-tabs {text-align:left;}			
+#emgoptions .portfolio-tabs a {
+
+}
+
+#emgoptions .portfolio-tabs a:hover {
+	color: rgb(160, 206, 78) !important;	
+}
+			
+#emgoptions .portfolio-tabs{
+    height: auto;
+    border-top: 1px solid rgb(231, 230, 230);
+    border-bottom: 1px solid rgb(231, 230, 230);
+    list-style: none outside none;
+    margin: 0px 0px 50px;
+    padding: 0px;
+    overflow: hidden;
+    line-height: 34px;
+}
+
+#emgoptions .portfolio-tabs li{
+    float: none;
+	display: inline-block;
+    margin-right: 20px !important;
+    list-style: none outside none;	
+}
+
+
+#emgoptions .portfolio-tabs li a {
+	display: inline-block;
+	text-decoration:none;
+}			
+	
+#emgoptions a.selected  {
+    color: rgb(160, 206, 78) !important;
+	border-top: 3px solid rgb(160, 206, 78);
+	outline: 0;
+}	
+	
+#emgoptions .portfolio-tabs a {	
+    font-family: "PT Sans",Arial,Helvetica,sans-serif !important;
+	font-size:13px !important;
+}	
+
+.mbCloseLinkTop {
+    	background: url(images/close-but.png) no-repeat scroll 0% 0% transparent !important;
+    	width: 20px !important;
+    	height: 20px !important;
+	position: absolute !important;
+	top: 20px !important;
+	right: 20px !important;
+	z-index:3;
+}
+
+.mbSosmedTop {
+	position: absolute !important;
+	top: 20px !important;
+	left: 20px !important;
+}
+		
+/*
+ * RESPONSIVE MODE
+*/
+
+@media only screen and (max-width: 480px) {
+	
+/*
+ * MEDIA THUMBNAIL
+*/	
+
+.pfwrpr {width: 100%;}	
+	
+.view {
+	max-width: 200px !important;
+	display:block;
+    }
+
+.view img {
+	display: block;
+	position: relative;
+	overflow: hidden;
+   	width:100%;
+	max-width: 200px !important;
+}
+
+
+.item .view {
+   width:auto !important;
+   height:auto !important;
+	max-width: 200px !important;
+   display:block;
+    }
+
+.item .view img {
+	display: block;
+	position: relative;
+	overflow: hidden;
+   	width:100%;
+	max-width: 200px !important;
+}
+
+.easymedia_center {text-align: center !important; float:none !important;}
+.easymedia_left {text-align: center !important; float:none !important; margin-right: 0;}
+.easymedia_right {text-align: center !important; float:none !important; margin-left: 0;}
+.easymedia_none {text-align: center !important; float:none !important;}
+
+.thecol {width: auto !important;}
+
+.forspan {
+   width:auto !important;
+    position:relative;
+    top: 43%;
+	margin:0 auto;
+	text-align:center;
+	overflow: hidden;
+	float:none;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	
+#emgoptions .portfolio-tabs{
+		text-align:center;
+		height:auto !important;
+		border-bottom:0 !important;
+	}
+
+#emgoptions .portfolio-tabs li{
+		display: block;
+		float:none !important;
+		margin:0 !important;
+		border-bottom:1px solid #E7E6E6 !important;
+	}
+	
+}

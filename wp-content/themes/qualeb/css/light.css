@@ -1,0 +1,450 @@
+/*-------------------------------------------------------------------------------------*/
+/*		0.		Table of Contents
+/*-------------------------------------------------------------------------------------*/
+/*
+		1.	General + Content Styling
+		2.	Header
+		3.	Home
+		4.	Portfolio Index
+		5.	Portfolio Single
+		6.	Widgets
+		7.	Blog
+		8.	Comments
+		9.	Footer
+		10.	Contact Form
+		11. Shortcodes
+*/
+
+/*-------------------------------------------------------------------------------------*/
+/*		1.		General + Content Styling
+/*-------------------------------------------------------------------------------------*/
+
+body {
+	background-color: #fff;
+	color: #555;
+}
+
+#page,
+#content,
+#page-content
+{
+	border-color:#eee;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6, a:focus, a:hover {
+	color:#444;
+}
+
+blockquote {
+	background:url('images/light/quote.png') no-repeat;
+	color:#777;
+}
+abbr, acronym{
+	border-color: #666;
+}
+del {
+	color:#666;
+}
+
+pre, code{
+	background-color:#eee; 
+	color:#444;
+}
+hr{
+	background:#eee;
+}
+
+/* ----- Table -----*/
+
+table {
+	border-color:#ededed;
+	color:#777;
+}
+ table tr{
+	background:#f9f9f9;
+}
+ table tr:hover{
+	background:#eee;
+}
+table th {
+	background:#fff;
+}
+table td {
+	border-color:#ededed;
+}
+
+/* Images */
+.wp-caption { background: #fff; border-color: #f0f0f0; }
+
+/*-------------------------------------------------------------------------------------*/
+/*		2.		Header
+/*-------------------------------------------------------------------------------------*/
+
+#crumbs a, div.menu ul a{
+	color:#999;
+}
+p.main-description{
+	color:#aaa;
+}
+
+div.menu ul li.sfHover ul a { 
+	color: #999!important; 
+}
+
+h2#home-slogan, #crumbs span.current, h2.page-title{
+	color:#666;
+}
+
+/* Navigation */
+#access{
+	border-color: #bbb;
+}
+span.header-desc{
+	color:#999;
+}
+div.menu ul ul {
+	border-color: #e2e2e2;
+}
+
+/*Drop Down Skin */
+div.menu ul ul {
+	background: #fff;
+}
+div.menu ul ul li:hover {
+	background: #f8f8f8;
+}
+
+/* Selectbox for max-width of 768px */
+#responsiveaccess select{
+   border-color: #eee;
+   color:#666;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*		3.		Home
+/*-------------------------------------------------------------------------------------*/
+
+li.home_portfolio_item h2.entry-title, li.home_portfolio_item_last h2.entry-title{
+	color:#fff;
+}
+
+#slider{
+	border-color:#eee;
+}
+
+h2.home-sidebar-title{
+	border-color: #eee;
+	color:#999;
+}
+
+h3.home-article-title, 
+span.home-article-date,
+a.home-arr{
+	color:#999;
+}
+
+a.home-arr:hover,
+p.main-description a{
+	color:#666;
+}
+
+p.main-description a:hover{
+	color:#888;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*		4.		Portfolio Index
+/*-------------------------------------------------------------------------------------*/
+
+#pindex-nav{
+	border-color:#eee;
+}
+
+#filter-nav a{
+	color:#888;
+}
+
+#filter-nav a:after{
+	color:#ccc;
+}
+
+h2.portfolio-entry-title{
+	color:#eee;
+}
+
+span.portfolio-hover p{
+	color:#aaa;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*		5.		Portfolio Single
+/*-------------------------------------------------------------------------------------*/
+
+#portfolio-content{
+	border-color: #eee;
+}
+
+#secondary.portfolio-single-sidebar{
+	background-color:#fafafa;
+}
+
+#psingle-nav{
+	background-color:#fff;
+	border-color:#eee;
+}
+
+#psingle-nav a{
+	color:#666;
+}
+
+#psingle-nav a.all:hover, 
+#psingle-nav a.nextp:hover,
+#psingle-nav a.prevp:hover{
+	color:#999;
+}
+
+h2.psingle-sidebar{
+	color:#444;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*		6.		Widgets
+/*-------------------------------------------------------------------------------------*/
+
+
+#secondary.widget-area{
+	border-top:1px solid #eee;
+	background: #f9f9f9;
+}
+aside.widget a,  #upper-footer a, #footer-widget-group .footer-w a{
+	color:#999;
+}
+h3.widget-title {
+	color:#888;
+	font-weight:bold;
+	letter-spacing:0px;
+	font-size: 11px; 
+}
+/* Popular Widget */
+.Popular_Widget ul li a:hover{
+	background:yellow;
+	color:#666 !important;
+}
+
+/* Twitter */
+
+.tweet, .query {
+	color:#777;
+}
+/* Flickr */
+
+.flickr_widget .flickr_badge_image {
+	border-color: #e0e0e0;
+}
+.flickr_widget .flickr_badge_image:hover{
+	background: #fff;
+}
+
+.flickr_widget .flickr_badge_image img {
+	border-color: #eee;
+	background-color: #2e2e2e;
+}
+.flickr_widget .flickr_badge_image img:hover{
+	border-color: #ccc;
+}
+
+/* Subnav Widget */
+
+aside.SubNav_Widget ul.widget-subnav li a:hover, aside.SubNav_Widget ul.widget-subnav li.current_page_item a{
+	color:#ccc;
+}
+
+aside.SubNav_Widget ul.widget-subnav li{
+	border-color:#eee;
+}
+
+/* Search Form */
+
+form#searchform  input[type=text],
+#searchform input#searchsubmit{
+	background-color:#fbfbfb;
+	border-color: #ddd;
+	color:#888;
+}
+form#searchform  input[type=text]{
+	background-color:#fff;
+	background-image:url('images/light/search-bg-left.gif') , url('images/light/search-bg.gif');
+	background-position: left, left;
+	background-repeat: no-repeat, repeat-x;
+}
+input#searchsubmit{
+	color:#888;
+	background:url('images/light/search-btn.gif');
+}
+::-webkit-input-placeholder {
+   color: #777;
+}
+
+:-moz-placeholder {
+   color: #777;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*		7.		Blog
+/*-------------------------------------------------------------------------------------*/
+span.blog-img-hover{
+	background:url('images/blog-image-hover.png') ;
+}
+
+div.responsive-meta{
+	color:#666;
+}
+#blog-accordion,
+#blogreg-index,
+.btm-border,
+.blog-title-box, 
+.btm-accordion-line,
+.border-bottom
+{
+	border-color:#eee;
+}
+
+.bloglevel1hover{
+	color:#fff;
+}
+
+.blog-article-date,
+.blog-article-meta, 
+span.author a{
+	color:#999;
+}
+
+.blog-article-title{
+	color:#888;
+}
+.blog-article-title-reg{
+	color:#888;
+}
+.hover{
+	color:#666;
+}
+.clic{
+	color:#666 !important;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*		8.		Comments
+/*-------------------------------------------------------------------------------------*/
+
+a.comments-date, a.comment-reply-link{
+	color:#999;
+}
+div.comment-author span.fn a{
+	color:#666;
+}
+
+#respond label{
+	color:#555;
+}
+
+.comments-right{
+	border-color:#eee;
+}
+
+input#author, 
+input#email, 
+input#url,
+textarea#comment{
+	background:#f5f5f5;
+	color:#444;
+}
+input#submit:hover{
+	background: #333;
+}
+
+input#submit{
+	color:#fff;
+}
+
+span.required{
+	color:#fa1515;
+}
+/*-------------------------------------------------------------------------------------*/
+/*		9.		Footer
+/*-------------------------------------------------------------------------------------*/
+
+#footer{
+	border-color:#eee;
+	color:#999;
+}
+#footer a{
+	color:#444;
+	text-decoration:none;
+}
+#upper-footer{
+	border-color:#eee;
+}
+div.social-link{
+	border-color:#ddd;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*		10.		Contact Form
+/*-------------------------------------------------------------------------------------*/
+
+form#contact input[type="text"], input[type="url"], 
+input[type="email"], input[type="tel"], form#contact textarea {
+	background:#f6f6f6;
+	color:#333;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*		11.		Shortcodes
+/*-------------------------------------------------------------------------------------*/
+
+/* Buttons */
+a.sbutton:hover{
+	background:#202020;
+
+}
+
+/* Alert Boxes */
+.sbox{
+	border-color:#ededed;
+}
+
+/* Dropcap */
+.dropcap {
+	color:#fff;
+	background:url('images/light/dropcap.png') no-repeat;
+}
+
+/* Back-to-top and divider */
+.back-to-top{
+	border-color: #ddd;
+}	
+.back-to-top a{
+	color:#ccc;
+}
+
+/* Aside */
+span.aside{
+	border-color: #ddd;
+	color:#444;
+}
+
+/* Tabs */
+ul.tabs {
+	border-color: #ddd; }
+
+ul.tabs li a {
+	border-color: #ddd;
+	background: #f6f6f6;
+	color:#666;}
+ul.tabs li a.active {
+	background: #fff;
+	color: #333;}

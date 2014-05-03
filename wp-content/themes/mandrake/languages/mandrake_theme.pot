@@ -1,0 +1,1215 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mandrake\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-22 13:13+0200\n"
+"PO-Revision-Date: 2011-11-22 13:14+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ./..\n"
+
+#: ../comments.php:18
+msgid "(Edit)"
+msgstr ""
+
+#: ../comments.php:21
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../comments.php:32
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:43
+#, php-format
+msgid "One Comment to %2$s"
+msgstr ""
+
+#: ../comments.php:51
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:52
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:66
+msgid "Leave a Comment"
+msgstr ""
+
+#: ../comments.php:66
+#, php-format
+msgid "Leave a Comment to %s"
+msgstr ""
+
+#: ../comments.php:70
+msgid "Your email address will not be published. Required fields are marked *"
+msgstr ""
+
+#: ../comments.php:72
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment"
+msgstr ""
+
+#: ../comments.php:76
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr ""
+
+#: ../comments.php:79
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:82
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:85
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:88
+msgid "Post Comment"
+msgstr ""
+
+#: ../footer.php:9
+msgid "Loading tweets..."
+msgstr ""
+
+#: ../footer.php:10
+#, php-format
+msgid "about %d seconds ago"
+msgstr ""
+
+#: ../footer.php:11
+msgid "about a minute ago"
+msgstr ""
+
+#: ../footer.php:12
+#, php-format
+msgid "about %d minutes ago"
+msgstr ""
+
+#: ../footer.php:13
+msgid "about an hour ago"
+msgstr ""
+
+#: ../footer.php:14
+#, php-format
+msgid "about %d hours ago"
+msgstr ""
+
+#: ../footer.php:15
+msgid "about a day ago"
+msgstr ""
+
+#: ../footer.php:16
+#, php-format
+msgid "about %d days ago"
+msgstr ""
+
+#: ../footer.php:17
+msgid "i said,"
+msgstr ""
+
+#: ../footer.php:18
+msgid "i"
+msgstr ""
+
+#: ../footer.php:19
+msgid "i am"
+msgstr ""
+
+#: ../footer.php:20
+msgid "i replied to"
+msgstr ""
+
+#: ../footer.php:21
+msgid "i was looking at"
+msgstr ""
+
+#: ../loop-search.php:11
+#: ../loop-small.php:11
+#: ../loop.php:11
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../loop-search.php:26
+#: ../loop-small.php:34
+#: ../loop.php:34
+msgid "Read more"
+msgstr ""
+
+#: ../loop-single.php:14
+#: ../loop-small.php:17
+#: ../loop.php:17
+msgid "Category: "
+msgstr ""
+
+#: ../loop-single.php:15
+#: ../loop-small.php:18
+#: ../loop.php:18
+msgid "No Comments"
+msgstr ""
+
+#: ../loop-single.php:15
+#: ../loop-small.php:18
+#: ../loop.php:18
+msgid "1 Comment"
+msgstr ""
+
+#: ../loop-single.php:15
+#: ../loop-small.php:18
+#: ../loop.php:18
+msgid "% Comments"
+msgstr ""
+
+#: ../loop-single.php:32
+msgid "Tags: "
+msgstr ""
+
+#: ../loop-single.php:39
+msgid "About the author"
+msgstr ""
+
+#: ../template-sitemap.php:13
+msgid "Pages"
+msgstr ""
+
+#: ../framework/theme.php:156
+msgid " Main menu"
+msgstr ""
+
+#: ../framework/theme.php:157
+msgid " Footer menu"
+msgstr ""
+
+#: ../framework/classes/optionBuilder.php:179
+msgid "Below are the sidebars you have created"
+msgstr ""
+
+#: ../framework/classes/optionBuilder.php:181
+msgid "Delete"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:11
+msgid "Homepage Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:12
+msgid "Page Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:13
+msgid "Blog Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:16
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:17
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:18
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:19
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:20
+msgid "Fifth Footer Widget Area"
+msgstr ""
+
+#: ../framework/classes/sidebarBuilder.php:21
+msgid "Sixth Footer Widget Area"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:25
+msgid "Home"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:48
+msgid "&laquo; First"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:56
+msgid "Last &raquo;"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:69
+msgid "Page not Found"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:71
+msgid "Our Apologies, but the page you requested could not be found."
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:75
+#: ../framework/functions/filter.php:10
+msgid "Search"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:77
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:81
+msgid "Archives"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:84
+#, php-format
+msgid "Category Archive for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:86
+#, php-format
+msgid "Tag Archives for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:88
+#, php-format
+msgid "Daily Archive for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:90
+#, php-format
+msgid "Monthly Archive for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:92
+#, php-format
+msgid "Yearly Archive for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:99
+#, php-format
+msgid "Author Archive for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:101
+msgid "Blog Archives"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:104
+#, php-format
+msgid "Archives for: %s"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:234
+msgid "Show:"
+msgstr ""
+
+#: ../framework/classes/themeBuilder.php:236
+msgid "All"
+msgstr ""
+
+#: ../framework/functions/filter.php:9
+msgid "Search..."
+msgstr ""
+
+#: ../framework/metaboxes/blog_cat.php:3
+#, php-format
+msgid "%s Blog Options"
+msgstr ""
+
+#: ../framework/metaboxes/blog_cat.php:11
+msgid "Blog Category"
+msgstr ""
+
+#: ../framework/metaboxes/blog_cat.php:12
+msgid "Select category for blog page template."
+msgstr ""
+
+#: ../framework/metaboxes/header.php:3
+#, php-format
+msgid "%s Header Options"
+msgstr ""
+
+#: ../framework/metaboxes/header.php:11
+msgid "Header Introduce Type"
+msgstr ""
+
+#: ../framework/metaboxes/header.php:12
+msgid "Select which introduce text type to use on the header."
+msgstr ""
+
+#: ../framework/metaboxes/header.php:23
+msgid "Custom Header Introduce Text"
+msgstr ""
+
+#: ../framework/metaboxes/header.php:24
+msgid "If the 'custom text' option is selected any text you enter here will override your custom header text."
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:3
+msgid "Portfolio Item Options"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:11
+msgid "Portfolio Type"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:12
+msgid "Select the portfolio type to show portfolio in the lightbox."
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:16
+msgid "Image"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:17
+msgid "Video"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:18
+msgid "Document"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:23
+msgid "Fullsize Image for Lightbox (optional)"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:24
+msgid "Insert the full URL of the image. If not assigned, it will use featured image instead."
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:30
+msgid "Video Link for Lightbox (optional)"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:31
+msgid "Insert the full URL of the video (YouTube, Vimeo etc). Only necessary when the portfolio type is video."
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:37
+msgid "Document Link (optional)"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio.php:38
+msgid "Insert the full URL of the document. Only necessary when the portfolio type is document."
+msgstr ""
+
+#: ../framework/metaboxes/portfolio_cat.php:3
+#, php-format
+msgid "%s Portfolio Options"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio_cat.php:11
+msgid "Portfolio Category"
+msgstr ""
+
+#: ../framework/metaboxes/portfolio_cat.php:12
+msgid "Select category for portfolio page template."
+msgstr ""
+
+#: ../framework/metaboxes/sidebar.php:3
+#, php-format
+msgid "%s Sidebar Options"
+msgstr ""
+
+#: ../framework/metaboxes/sidebar.php:24
+msgid "Custom Sidebar"
+msgstr ""
+
+#: ../framework/metaboxes/sidebar.php:25
+msgid "Select the custom sidebar that you'd like to be display."
+msgstr ""
+
+#: ../framework/metaboxes/slideshow.php:3
+msgid "Slideshow Item Options"
+msgstr ""
+
+#: ../framework/metaboxes/slideshow.php:11
+msgid "URL (optional)"
+msgstr ""
+
+#: ../framework/metaboxes/slideshow.php:12
+msgid "Insert the full URL (include <code>http://</code>) of your slideshow item here."
+msgstr ""
+
+#: ../framework/options/option_blog.php:4
+msgid "Blog"
+msgstr ""
+
+#: ../framework/options/option_blog.php:8
+#: ../framework/options/option_general.php:8
+msgid "General"
+msgstr ""
+
+#: ../framework/options/option_blog.php:12
+msgid "Layout"
+msgstr ""
+
+#: ../framework/options/option_blog.php:17
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../framework/options/option_blog.php:18
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../framework/options/option_blog.php:23
+msgid "Display Meta Data"
+msgstr ""
+
+#: ../framework/options/option_blog.php:30
+msgid "Display Post Tags"
+msgstr ""
+
+#: ../framework/options/option_blog.php:37
+msgid "Display About Author"
+msgstr ""
+
+#: ../framework/options/option_footer.php:5
+msgid "Footer"
+msgstr ""
+
+#: ../framework/options/option_footer.php:9
+msgid "Twitter"
+msgstr ""
+
+#: ../framework/options/option_footer.php:13
+msgid "Display Twitter Bar"
+msgstr ""
+
+#: ../framework/options/option_footer.php:14
+msgid "If you don't want a twitter bar, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_footer.php:20
+msgid "Twitter Username"
+msgstr ""
+
+#: ../framework/options/option_footer.php:21
+msgid "Insert your twitter username here."
+msgstr ""
+
+#: ../framework/options/option_footer.php:27
+msgid "Twitter Tweets Count"
+msgstr ""
+
+#: ../framework/options/option_footer.php:28
+msgid "Insert your twitter tweets count here."
+msgstr ""
+
+#: ../framework/options/option_footer.php:34
+msgid "Display Footer"
+msgstr ""
+
+#: ../framework/options/option_footer.php:35
+msgid "If you don't want a footer, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_footer.php:41
+msgid "Display Sub Footer"
+msgstr ""
+
+#: ../framework/options/option_footer.php:42
+msgid "If you don't want a sub footer, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_footer.php:48
+msgid "Footer Column Layout"
+msgstr ""
+
+#: ../framework/options/option_footer.php:49
+msgid "Select which layout to use on the footer."
+msgstr ""
+
+#: ../framework/options/option_footer.php:62
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: ../framework/options/option_footer.php:63
+msgid "Insert your copyright text here."
+msgstr ""
+
+#: ../framework/options/option_general.php:4
+msgid "Settings"
+msgstr ""
+
+#: ../framework/options/option_general.php:12
+msgid "Theme Color"
+msgstr ""
+
+#: ../framework/options/option_general.php:28
+msgid "Website Font"
+msgstr ""
+
+#: ../framework/options/option_general.php:87
+msgid "Website Logo"
+msgstr ""
+
+#: ../framework/options/option_general.php:88
+msgid "Insert the full URL (include <code>http://</code>) of your logo here."
+msgstr ""
+
+#: ../framework/options/option_general.php:94
+msgid "Website Favicon"
+msgstr ""
+
+#: ../framework/options/option_general.php:95
+msgid "Insert the full URL (include <code>http://</code>) of your favicon here."
+msgstr ""
+
+#: ../framework/options/option_general.php:101
+msgid "Display Breadcrumbs"
+msgstr ""
+
+#: ../framework/options/option_general.php:102
+msgid "If you don't want breadcrubms, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_general.php:108
+msgid "404 Message"
+msgstr ""
+
+#: ../framework/options/option_general.php:109
+msgid "Insert your 404 page code here."
+msgstr ""
+
+#: ../framework/options/option_general.php:115
+msgid "Google Analytics Code"
+msgstr ""
+
+#: ../framework/options/option_general.php:116
+msgid "Insert your <a href='http://www.google.com/analytics/' target='_blank'>Google Analytics</a> tracking code here."
+msgstr ""
+
+#: ../framework/options/option_home.php:4
+msgid "Homepage"
+msgstr ""
+
+#: ../framework/options/option_home.php:17
+msgid "Full Width"
+msgstr ""
+
+#: ../framework/options/option_home.php:24
+msgid "Display Slide Show"
+msgstr ""
+
+#: ../framework/options/option_home.php:25
+msgid "If you don't want a homepage slide show, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_home.php:31
+msgid "Display Portfolio Slider"
+msgstr ""
+
+#: ../framework/options/option_home.php:32
+msgid "If you don't want a home page portfolio slider, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_home.php:38
+msgid "Portfolio Slider Category"
+msgstr ""
+
+#: ../framework/options/option_home.php:39
+msgid "Select which portfolio category to use on the portfolio slider."
+msgstr ""
+
+#: ../framework/options/option_home.php:45
+msgid "Display Teaser"
+msgstr ""
+
+#: ../framework/options/option_home.php:46
+msgid "If you don't want a home page teaser, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_home.php:52
+msgid "Teaser Text"
+msgstr ""
+
+#: ../framework/options/option_home.php:53
+msgid "Insert your teaser text here."
+msgstr ""
+
+#: ../framework/options/option_home.php:59
+msgid "Teaser Button Text"
+msgstr ""
+
+#: ../framework/options/option_home.php:60
+msgid "Insert your teaser button text here."
+msgstr ""
+
+#: ../framework/options/option_home.php:66
+msgid "Teaser Button ULR"
+msgstr ""
+
+#: ../framework/options/option_home.php:67
+msgid "Insert the full URL (include <code>http://</code>) of your teaser button here."
+msgstr ""
+
+#: ../framework/options/option_portfolio.php:4
+msgid "Portfolio"
+msgstr ""
+
+#: ../framework/options/option_portfolio.php:12
+msgid "Display Title"
+msgstr ""
+
+#: ../framework/options/option_portfolio.php:19
+msgid "Display Description"
+msgstr ""
+
+#: ../framework/options/option_portfolio.php:26
+msgid "Display Filter"
+msgstr ""
+
+#: ../framework/options/option_portfolio.php:33
+msgid "Portfolio Items Count"
+msgstr ""
+
+#: ../framework/options/option_portfolio.php:34
+msgid "Insert how many items to show in one portfolio page."
+msgstr ""
+
+#: ../framework/options/option_sidebar.php:4
+#: ../framework/options/option_sidebar.php:8
+msgid "Sidebar"
+msgstr ""
+
+#: ../framework/options/option_sidebar.php:12
+msgid "Generate Sidebar"
+msgstr ""
+
+#: ../framework/options/option_sidebar.php:13
+msgid "Enter the name of sidebar you'd like to create."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:4
+msgid "Slideshow"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:8
+msgid "Nivo Slider Settings"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:12
+#: ../framework/options/option_slideshow.php:58
+msgid "Transition Effects"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:13
+#: ../framework/options/option_slideshow.php:59
+msgid "Select which effect to use on the slideshow."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:30
+#: ../framework/options/option_slideshow.php:107
+#: ../framework/options/option_slideshow.php:236
+msgid "Animation Speed"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:31
+#: ../framework/options/option_slideshow.php:237
+msgid "Insert your animation transition speed here (milliseconds)."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:37
+#: ../framework/options/option_slideshow.php:114
+#: ../framework/options/option_slideshow.php:243
+msgid "Pause Time"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:38
+#: ../framework/options/option_slideshow.php:244
+msgid "Insert your slide pause time speed here (milliseconds)."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:44
+msgid "Next & Prev Buttons"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:45
+msgid "If you don't want slideshow next & prev buttons, un-check the button."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:54
+msgid "3D Slider Settings"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:108
+msgid "Insert your animation transition speed here (seconds)."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:115
+msgid "Insert your slide pause time speed here (seconds)."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:124
+msgid "Accordion Slider Settings"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:128
+#: ../framework/options/option_slideshow.php:195
+msgid "Easing Effects"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:129
+#: ../framework/options/option_slideshow.php:196
+msgid "Select which easing to use on the slideshow."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:169
+msgid "Easing Speed"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:170
+msgid "Insert your easing speed here (milliseconds)."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:179
+msgid "Anything Slider Settings"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:183
+msgid "Caption position"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:184
+msgid "Select which caption position to use on the slideshow."
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:188
+msgid "Left"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:189
+msgid "Right"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:190
+msgid "Bottom"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:250
+msgid "Slideshow Autoplay"
+msgstr ""
+
+#: ../framework/options/option_slideshow.php:251
+msgid "If you don't want slideshow autoplay, un-check the button."
+msgstr ""
+
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:50
+msgid "You are here: "
+msgstr ""
+
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:138
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:141
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:144
+msgid "Archives for "
+msgstr ""
+
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:148
+msgid "Archives by: "
+msgstr ""
+
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:153
+msgid "Search results for \""
+msgstr ""
+
+#: ../framework/plugins/breadcrumbs-plus/breadcrumbs-plus.php:157
+msgid "Page Not Found"
+msgstr ""
+
+#: ../framework/shortcodes/dividers.php:9
+msgid "Top"
+msgstr ""
+
+#: ../framework/shortcodes/video.php:62
+msgid "Poster Image"
+msgstr ""
+
+#: ../framework/shortcodes/video.php:62
+msgid "No video playback capabilities."
+msgstr ""
+
+#: ../framework/shortcodes/widgets.php:9
+msgid "Your message was successfully sent. <strong>Thank You!</strong>"
+msgstr ""
+
+#: ../framework/shortcodes/widgets.php:12
+msgid "Name *"
+msgstr ""
+
+#: ../framework/shortcodes/widgets.php:14
+msgid "Email *"
+msgstr ""
+
+#: ../framework/shortcodes/widgets.php:16
+msgid "Send Message"
+msgstr ""
+
+#: ../framework/tinymce/blockquote_window.php:6
+msgid "You are not allowed to be here"
+msgstr ""
+
+#: ../framework/types/portfolio.php:8
+msgid "Portfolios"
+msgstr ""
+
+#: ../framework/types/portfolio.php:10
+#: ../framework/types/slideshow.php:10
+msgid "Add New"
+msgstr ""
+
+#: ../framework/types/portfolio.php:11
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../framework/types/portfolio.php:12
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../framework/types/portfolio.php:13
+msgid "New Portfolio"
+msgstr ""
+
+#: ../framework/types/portfolio.php:14
+msgid "View Portfolio"
+msgstr ""
+
+#: ../framework/types/portfolio.php:15
+msgid "Search Portfolios"
+msgstr ""
+
+#: ../framework/types/portfolio.php:16
+msgid "No portfolios found"
+msgstr ""
+
+#: ../framework/types/portfolio.php:17
+msgid "No portfolios found in Trash"
+msgstr ""
+
+#: ../framework/types/portfolio.php:20
+msgid "portfolio"
+msgstr ""
+
+#: ../framework/types/portfolio.php:35
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ../framework/types/portfolio.php:37
+msgid "Search Categories"
+msgstr ""
+
+#: ../framework/types/portfolio.php:38
+msgid "Popular Categories"
+msgstr ""
+
+#: ../framework/types/portfolio.php:39
+msgid "All Categories"
+msgstr ""
+
+#: ../framework/types/portfolio.php:42
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../framework/types/portfolio.php:43
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: ../framework/types/portfolio.php:44
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../framework/types/portfolio.php:45
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: ../framework/types/portfolio.php:46
+msgid "Separate Portfolio category with commas"
+msgstr ""
+
+#: ../framework/types/portfolio.php:47
+msgid "Add or remove portfolio category"
+msgstr ""
+
+#: ../framework/types/portfolio.php:48
+msgid "Choose from the most used portfolio category"
+msgstr ""
+
+#: ../framework/types/slideshow.php:8
+msgid "Slideshows"
+msgstr ""
+
+#: ../framework/types/slideshow.php:11
+msgid "Add New Slideshow Item"
+msgstr ""
+
+#: ../framework/types/slideshow.php:12
+msgid "Edit Slideshow Item"
+msgstr ""
+
+#: ../framework/types/slideshow.php:13
+msgid "New Slideshow Item"
+msgstr ""
+
+#: ../framework/types/slideshow.php:14
+msgid "View Slideshow Item"
+msgstr ""
+
+#: ../framework/types/slideshow.php:15
+msgid "Search Slideshow Items"
+msgstr ""
+
+#: ../framework/types/slideshow.php:16
+msgid "No Slideshow item found"
+msgstr ""
+
+#: ../framework/types/slideshow.php:17
+msgid "No Slideshow items found in Trash"
+msgstr ""
+
+#: ../framework/types/slideshow.php:20
+msgid "slideshow"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:9
+msgid "Displays a list of advertisement"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:10
+#: ../framework/widgets/advertisement.php:16
+msgid "Advertisement"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:58
+#: ../framework/widgets/contactform.php:60
+msgid "Title:"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:61
+msgid "How many advertisement to display?"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:64
+msgid "Note: Please input FULL URL <br/>(e.g. <code>http://www.example.com</code>)"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:69
+#, php-format
+msgid "#%s Image URL:"
+msgstr ""
+
+#: ../framework/widgets/advertisement.php:71
+#, php-format
+msgid "#%s Link:"
+msgstr ""
+
+#: ../framework/widgets/contactform.php:9
+msgid "Displays a email contact form"
+msgstr ""
+
+#: ../framework/widgets/contactform.php:10
+msgid "Contact Form"
+msgstr ""
+
+#: ../framework/widgets/contactform.php:16
+msgid "Email Us"
+msgstr ""
+
+#: ../framework/widgets/contactform.php:37
+msgid "Submit"
+msgstr ""
+
+#: ../framework/widgets/contactform.php:63
+msgid "Your Email:"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:9
+msgid "Displays a list of contact info"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:10
+#: ../framework/widgets/contactinfo.php:16
+msgid "Contact Info"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:70
+msgid "Introduce text:"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:73
+msgid "Name:"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:76
+msgid "Phone:"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:79
+msgid "Cell phone:"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:82
+msgid "Email:"
+msgstr ""
+
+#: ../framework/widgets/contactinfo.php:85
+msgid "Address:"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:9
+msgid "Displays photos from a Flickr"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:10
+#: ../framework/widgets/flickr.php:16
+msgid "Flickr"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:56
+msgid "Flickr ID (<a href=\"http://www.idgettr.com\" target=\"_blank\">idGettr</a>):"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:59
+msgid "Number of photo to show:"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:62
+msgid "Method for display your photos:"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:64
+msgid "Latest"
+msgstr ""
+
+#: ../framework/widgets/flickr.php:65
+msgid "Random"
+msgstr ""
+
+#: ../framework/widgets/popular.php:9
+msgid "Displays the popular posts"
+msgstr ""
+
+#: ../framework/widgets/popular.php:10
+#: ../framework/widgets/popular.php:28
+msgid "Popular Posts"
+msgstr ""
+
+#: ../framework/widgets/popular.php:94
+#: ../framework/widgets/recent.php:94
+#: ../framework/widgets/related.php:103
+msgid "Number of posts to show:"
+msgstr ""
+
+#: ../framework/widgets/popular.php:97
+#: ../framework/widgets/recent.php:97
+#: ../framework/widgets/related.php:106
+msgid "Categorys:"
+msgstr ""
+
+#: ../framework/widgets/recent.php:9
+msgid "Displays the recent posts"
+msgstr ""
+
+#: ../framework/widgets/recent.php:10
+#: ../framework/widgets/recent.php:28
+msgid "Recent Posts"
+msgstr ""
+
+#: ../framework/widgets/related.php:9
+msgid "Displays the related posts"
+msgstr ""
+
+#: ../framework/widgets/related.php:10
+#: ../framework/widgets/related.php:28
+msgid "Related Posts"
+msgstr ""
+
+#: ../framework/widgets/social.php:37
+msgid "Displays a list of Social Icons"
+msgstr ""
+
+#: ../framework/widgets/social.php:38
+msgid "Social Icon"
+msgstr ""
+
+#: ../framework/widgets/social.php:129
+msgid "Icon Alt Title:"
+msgstr ""
+
+#: ../framework/widgets/social.php:131
+msgid "Icon Package:"
+msgstr ""
+
+#: ../framework/widgets/social.php:139
+msgid "Enable Social Icon:"
+msgstr ""
+
+#: ../framework/widgets/social.php:152
+msgid "URL:"
+msgstr ""
+
+#: ../framework/widgets/social.php:158
+msgid "How many custom icons to add?"
+msgstr ""
+
+#: ../framework/widgets/social.php:164
+#, php-format
+msgid "Custom %s Name:"
+msgstr ""
+
+#: ../framework/widgets/social.php:166
+#, php-format
+msgid "Custom %s URL:"
+msgstr ""
+
+#: ../framework/widgets/social.php:168
+#, php-format
+msgid "Custom %s Icon:"
+msgstr ""
+
+#: ../framework/widgets/testimonials.php:9
+msgid "Displays a list of testimonials"
+msgstr ""
+
+#: ../framework/widgets/testimonials.php:10
+#: ../framework/widgets/testimonials.php:16
+msgid "Testimonials"
+msgstr ""
+
+#: ../framework/widgets/testimonials.php:71
+msgid "How many testimonials to display?"
+msgstr ""
+
+#: ../framework/widgets/testimonials.php:77
+#, php-format
+msgid "#%s Testimonial:"
+msgstr ""
+
+#: ../framework/widgets/testimonials.php:79
+#, php-format
+msgid "#%s Cite:"
+msgstr ""
+
+#: ../framework/widgets/twitter.php:9
+msgid "Displays tweets from Twitter"
+msgstr ""
+
+#: ../framework/widgets/twitter.php:16
+msgid "Recent Tweets"
+msgstr ""
+
+#: ../framework/widgets/twitter.php:74
+msgid "Username:"
+msgstr ""
+
+#: ../framework/widgets/twitter.php:77
+msgid "How many tweets to display?"
+msgstr ""
+

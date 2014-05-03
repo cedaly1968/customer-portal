@@ -1,0 +1,1 @@
+2be1f338c1c0bee696b8bfc2d61a43c4a:1:{s:23:"lbl_partner_login_title";s:22:"Log in to partner area";}

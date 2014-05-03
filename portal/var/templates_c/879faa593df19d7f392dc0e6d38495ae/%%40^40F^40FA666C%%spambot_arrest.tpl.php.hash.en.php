@@ -1,0 +1,1 @@
+f45a25de7ae98dd6c856dfe9c394f0d9a:3:{s:23:"lbl_case_sensitive_note";s:64:"The code is case-sensitive and must be entered exactly as above.";s:23:"lbl_type_the_characters";s:42:"Type the characters you see in the picture";s:21:"lbl_word_verification";s:18:"Image verification";}

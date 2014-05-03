@@ -1,0 +1,4 @@
+[09-Oct-2013 16:29:43 America/Detroit] PHP Fatal error:  Call to undefined function wp_verify_nonce() in /home/ced1968/public_html/wp-content/plugins/advanced-custom-fields/core/actions/export.php on line 21
+[06-Feb-2014 15:07:00 America/Detroit] PHP Fatal error:  Call to undefined function wp_verify_nonce() in /home/ced1968/public_html/wp-content/plugins/advanced-custom-fields/core/actions/export.php on line 21
+[05-Mar-2014 09:55:05 America/Detroit] PHP Fatal error:  Call to undefined function wp_verify_nonce() in /home/ced1968/public_html/wp-content/plugins/advanced-custom-fields/core/actions/export.php on line 21
+[09-Mar-2014 15:25:53 America/Detroit] PHP Fatal error:  Call to undefined function wp_verify_nonce() in /home/ced1968/public_html/wp-content/plugins/advanced-custom-fields/core/actions/export.php on line 21

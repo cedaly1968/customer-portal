@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+       chart: {type: 'bar'},credits: {enabled: 'true'},legend: {align: 'right',backgroundColor: '#FFFFFF',borderWidth: '1',floating: 'true',layout: 'vertical',shadow: 'true',verticalAlign: 'top',x: '-40',y: '100'},subtitle: {text: 'Source: Wikipedia.org'},title: {text: 'Historic World Population by Region'},tooltip: {valueSuffix: 'millions'}, plotOptions: { bar: {dataLabels: {enabled: 'true'},},},xAxis: {
+                categories: [0,1100078789,1100076585,1100075348,1100075017,1100072931,1100072592,1100071651,1100071628,1100071610,1100062551,1100076577],
+                title: {
+                    text: null
+                }
+            },
+			yAxis: {
+                min: 0,
+                title: {
+                    text: 'Population (millions)',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+			series: [{  name: 'carts',
+               data: [0,453572,636350,815512,564711,53365,471679,690490,1512714,247851,135948,399974]
+               },{  name: 'visits',
+               data: [0,344712,490775,629199,438565,40020,366293,533609,1177611,190109,103810,302548]
+               },{  name: 'items',
+               data: [0,1331158,1974779,2469489,1810921,161525,1449022,2120341,4778337,739164,407903,1332449]
+               },{  name: 'margin',
+               data: [0,3737734,5383198,5933696,5166340,450977,4494511,6660714,12209847,1509169,771672,4020299]
+               },]
+        });
+    });
+    
+	
+
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

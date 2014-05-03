@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+
+                    
+$(function () {
+        $('#container').highcharts({
+        chart: {type: 'bar'},credits: {enabled: 'true'},legend: {align: 'right',backgroundColor: '#FFFFFF',borderWidth: '1',floating: 'true',layout: 'vertical',shadow: 'true',verticalAlign: 'top',x: '-40',y: '100'},subtitle: {text: 'subtitle'},title: {text: 'Chart title'},tooltip: {valueSuffix: 'tooltip'}, plotOptions: { bar: {dataLabels: {enabled: 'true'},},},xAxis: {categories: [0,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647],title: {text: null}},yAxis: {min: 0,title: {text: 'Population (millions)',align: 'high'},labels: {overflow: 'justify'}},series: [{name:'gross_sales',data: [0,85219540,59764194,92166618,36379922,108202341,7540587,49990469,48674744,4790615,49819641,31465931]},{name:'net_sales',data: [0,76522670,53321238,81994909,32504210,97583047,6927053,45437836,43416694,4282078,44543175,28689389]},{name:'carts',data: [0,2101806,1806852,2755504,914334,2650518,160974,1224132,1261859,123631,1215075,785887]},{name:'visits',data: [0,1657104,1421952,2169951,712692,2063330,125101,960954,996554,95376,956437,612766]},{name:'items',data: [0,6473092,5020643,7626801,2817436,8038317,541848,3708598,3837689,379908,3736160,2502062]},]
+        });
+    });
+    
+
+		</script>
+	</head>
+	<body>
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

@@ -1,0 +1,170 @@
+<?php
+/*echo $mode;
+echo $plotname;*/
+if(!empty($plotname))
+{
+$plot_vaiables = func_query ( "SELECT * FROM  `hc_plot_options`  WHERE  `plot_options` LIKE  '%,$plotid,%' and `avail` = 'Y'" );
+echo "<table width='680' border='0'>
+<tr>
+<td colspan='2'>
+<ul>
+<li>
+<input type='hidden' value='{,}'  name='posted_values[plot_options][".$plotname."][bracket]' />
+</li>";
+foreach($plot_vaiables as $pv => $plv)
+{ 
+if($plv[level] == '0')
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>".ucfirst($plv[name])."</td>
+<td class='list_right'>		 
+<input type='text' value='".strip_tags($plv[value])."'  name='posted_values[plot_options][".$plotname."][".$plv[name]."]' />
+</td>
+</tr>
+</table>		
+</li>";
+}
+if($plv[level] == '1')
+{
+echo
+"<li> 
+<ul>";
+if ($plv[brackets] != ''  and $plv[name] == '')
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>
+<b>".ucfirst($plv[pre_attribute1])."</b>
+</td>					
+<td class='list_right'>								
+<input type='hidden' value='".$plv[brackets]."'  name='posted_values[plot_options][".$plotname."][".$plv[pre_attribute1]."][bracket]' />
+</td>
+</tr>
+</table>				
+</li>";
+}
+else
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>".ucfirst($plv[name])."</td>
+<td class='list_right'> 	
+<input type='text' value='".strip_tags($plv[value])."' name='posted_values[plot_options][".$plotname."][".$plv[pre_attribute1]."][".$plv[name]."]' />
+</td>
+</tr>
+</table>			   
+</li>";
+}
+echo 
+"</ul>
+</li>";
+}
+if($plv[level] == '2')
+{
+echo
+"<li> 
+<ul>
+<li>
+<ul>
+";
+if ($plv[brackets] != ''  and $plv[name] == '')
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>
+<b>".ucfirst($plv[pre_attribute])."</b>
+</td>					
+<td class='list_right'>								
+<input type='hidden' value='".$plv[brackets]."'  name='posted_values[plot_options][".$plotname."][".$plv[pre_attribute1]."][".$plv[pre_attribute]."][bracket]' />
+</td>
+</tr>
+</table>				
+</li>";
+}
+else
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>".ucfirst($plv[name])."</td>
+<td class='list_right'> 	
+<input type='text' value='".strip_tags($plv[value])."'name='posted_values[plot_options][".$plotname."][".$plv[pre_attribute1]."][".$plv[pre_attribute]."][".$plv[name]."]' />
+</td>
+</tr>
+</table>			   
+</li>";
+}
+echo 
+"</ul>
+</li>
+</ul>
+</li>";
+}
+if($plv[level] == '3')
+{
+echo
+"
+<li>
+<ul>
+<li>
+<ul>
+<li> 
+<ul> 
+<li>
+<ul> 
+";
+if ($plv[brackets] != ''  and $plv[name] == '')
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>
+<b>".ucfirst($plv[attribute])."</b>
+</td>					
+<td class='list_right'>								
+<input type='hidden' value='".$plv[brackets]."'  name='posted_values[plot_options][".$plotname."][".$plv[pre_attribute1]."][".$plv[pre_attribute]."][".$plv[attribute]."][bracket]' />
+</td>
+</tr>
+</table>				
+</li>";
+}
+else
+{
+echo
+"<li>
+<table cellpadding='0' cellspacing='0' width='100%' class='list_in_table'>
+<tr>
+<td class='list_left'>".ucfirst($plv[name])."</td>
+<td class='list_right'> 	
+<input type='text' value='".strip_tags($plv[value])."'name='posted_values[plot_options][".$plotname."][".$plv[pre_attribute1]."][".$plv[pre_attribute]."][".$plv[attribute]."][".$plv[name]."]' />
+</td>
+</tr>
+</table>			   
+</li>";
+}
+echo 
+"</ul>
+</li>
+</ul>
+</li>   
+</ul>
+</li>
+</ul>  
+</li>";
+}
+}
+echo "</ul> </td> </tr> </table>";
+}
+exit;
+?>
